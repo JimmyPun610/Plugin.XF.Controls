@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:controls="clr-namespace:Plugin.XF.Controls.Shared.Controls;assembly=Plugin.XF.Controls.Shared"
+             xmlns:effects="clr-namespace:Plugin.XF.Controls.Shared.Effects;assembly=Plugin.XF.Controls.Shared"
+             x:Class="Plugin.XF.Controls.Sample.Pages.ControlsSample">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Entry HorizontalTextAlignment="Start" Text="This is borderless entry" BackgroundColor="Tan">
+                    <Entry.Effects>
+                        <effects:BorderlessEntryEffect/>
+                    </Entry.Effects>
+                </Entry>
+                <Editor Text="This is Borderless Editor" BackgroundColor="Yellow" VerticalOptions="FillAndExpand">
+                    <Editor.Effects>
+                        <effects:BorderlessEditorEffect/>
+                    </Editor.Effects>
+                </Editor>
+                
+               
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>
