@@ -14,9 +14,10 @@ namespace Plugin.XF.Controls.Droid
 {
     public class RendererInitializer
     {
-        public static void Init()
+        public static void Init(Context context, Bundle bundle)
         {
             Renderer.EnhancedWebViewRenderer.Init();
+            Rg.Plugins.Popup.Popup.Init(context, bundle);
         }
     }
 }

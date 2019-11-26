@@ -16,7 +16,6 @@ namespace Plugin.XF.Controls.Shared.Controls
              declaringType: typeof(EnhancedWebView),
              defaultValue: default(Dictionary<string, string>)
          );
-
         public Dictionary<string, string> CustomHeaders
         {
             get => (Dictionary<string, string>)GetValue(CustomHeadersProperty);

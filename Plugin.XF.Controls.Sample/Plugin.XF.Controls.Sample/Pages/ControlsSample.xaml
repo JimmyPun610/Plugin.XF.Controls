@@ -10,6 +10,8 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <controls:EnhancedSearchBar iOSSearchBarStyle="Minimal" Placeholder="Minimal Style" HorizontalOptions="FillAndExpand"/>
+                <controls:EnhancedSearchBar iOSSearchBarStyle="Prominent" Placeholder="Prominent Style" HorizontalOptions="FillAndExpand"/>
                 <Entry HorizontalTextAlignment="Start" Text="This is borderless entry" BackgroundColor="Tan">
                     <Entry.Effects>
                         <effects:BorderlessEntryEffect/>

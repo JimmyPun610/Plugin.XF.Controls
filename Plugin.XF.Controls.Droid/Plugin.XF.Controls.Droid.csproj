@@ -50,6 +50,7 @@
     <Compile Include="Effects\BorderlessEntryEffect.cs" />
     <Compile Include="EnhancedWebViewClient.cs" />
     <Compile Include="RendererInitializar.cs" />
+    <Compile Include="Renderer\EnhancedSearchBarRenderer.cs" />
     <Compile Include="Renderer\EnhancedWebViewRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,6 +106,7 @@
     <AndroidResource Include="Resources\values\strings.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="PlatformService\" />
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
