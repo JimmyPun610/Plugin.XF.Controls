@@ -12,7 +12,6 @@ Please refer to Sample app for usage.
 ##### EnhancedWebView
 <code>
 1. Custom Header Support
-  
 2. Basic Authentication Support
 </code>
 
