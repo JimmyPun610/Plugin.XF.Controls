@@ -12,7 +12,6 @@ namespace Plugin.XF.Controls.iOS
         public static void Init()
         {
             Renderer.EnhancedWebViewRenderer.Init();
-            Rg.Plugins.Popup.Popup.Init();
         }
     }
 }
