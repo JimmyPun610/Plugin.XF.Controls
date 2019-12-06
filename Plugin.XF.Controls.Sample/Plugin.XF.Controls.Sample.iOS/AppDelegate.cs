@@ -23,6 +23,7 @@ namespace Plugin.XF.Controls.Sample.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            global::Xamarin.Forms.FormsMaterial.Init();
             LoadApplication(new App());
             Plugin.XF.Controls.iOS.RendererInitializar.Init();
             return base.FinishedLaunching(app, options);

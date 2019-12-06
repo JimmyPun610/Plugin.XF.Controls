@@ -17,6 +17,11 @@
                 </Button>
                 <controls:EnhancedSearchBar iOSSearchBarStyle="Minimal" Placeholder="iOS Minimal Style SearchBar" HorizontalOptions="FillAndExpand"/>
                 <controls:EnhancedSearchBar iOSSearchBarStyle="Prominent" Placeholder="iOS Prominent Style SearchBar" HorizontalOptions="FillAndExpand"/>
+                <controls:AnnotatedEntry AnnotationColor="Red" IsShownAnnotation="True" Annotation="This is annotation" BackgroundColor="LightGray">
+                    <controls:AnnotatedEntry.Entry>
+                        <Entry Visual="Material" Placeholder="AnnotationEntry, type anything to see"/>
+                    </controls:AnnotatedEntry.Entry>
+                </controls:AnnotatedEntry>
                 <Entry HorizontalTextAlignment="Start" Text="This is entry with done" BackgroundColor="Blue">
                     <Entry.Effects>
                         <effects:DoneEntryEffect/>
