@@ -10,10 +10,15 @@ Please refer to Sample app for usage.
 
 ### Controls
 #### EnhancedWebView
-<code>
+```
 1. Custom Header Support
 2. Basic Authentication Support
-</code>
+```
 
 #### Borderless Entry Effects
 #### Borderless Editor Effects
+#### AnnotatedEntry
+```
+1. Custom annotation
+2. Entry part can pass custom entry view
+```
