@@ -16,5 +16,15 @@ namespace Plugin.XF.Controls.Sample.Pages
         {
             InitializeComponent();
         }
+
+        private void ActionButton1_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Button 1 Clicked", "You clicked Action Button 1", "OK");
+        }
+
+        private void ActionButton2_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Button 2 Clicked", "You clicked Action Button 2", "OK");
+        }
     }
 }

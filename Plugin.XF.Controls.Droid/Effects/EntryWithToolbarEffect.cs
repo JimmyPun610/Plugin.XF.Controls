@@ -14,10 +14,10 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
 
-[assembly: ExportEffect(typeof(DoneEntryEffect), nameof(DoneEntryEffect))]
+[assembly: ExportEffect(typeof(EntryWithToolbarEffect), nameof(EntryWithToolbarEffect))]
 namespace Plugin.XF.Controls.Droid.Effects
 {
-    public class DoneEntryEffect : PlatformEffect
+    public class EntryWithToolbarEffect : PlatformEffect
     {
         protected override void OnAttached()
         {
