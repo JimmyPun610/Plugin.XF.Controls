@@ -1,5 +1,5 @@
 # Plugin.XF.Controls
-Xamarin Forms Controls and Effects, WebView with Headres, Basic Authentication, Borderless Entry, Borderless Editor, Entry with Toolbar Effects
+Xamarin Forms Controls and Effects, WebView with Headres, Basic Authentication, Borderless Entry, Borderless Editor, Entry with Toolbar Effects, Snackbar
 
 Please refer to Sample app for usage.
 
