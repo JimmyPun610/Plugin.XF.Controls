@@ -10,7 +10,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                <Button Text="Non all capital letter button for Android">
+                <Button Text="Click to show snackbar" Clicked="Button_Clicked">
                     <Button.Effects>
                         <effects:NonAllCapButtonEffect/>
                     </Button.Effects>

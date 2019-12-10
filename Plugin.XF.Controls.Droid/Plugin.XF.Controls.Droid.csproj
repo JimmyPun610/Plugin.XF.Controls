@@ -51,6 +51,7 @@
     <Compile Include="Effects\EntryWithToolbarEffect.cs" />
     <Compile Include="Effects\NonAllCapButtonEffect.cs" />
     <Compile Include="EnhancedWebViewClient.cs" />
+    <Compile Include="PlatformService\DialogService.cs" />
     <Compile Include="RendererInitializar.cs" />
     <Compile Include="Renderer\EnhancedSearchBarRenderer.cs" />
     <Compile Include="Renderer\EnhancedWebViewRenderer.cs" />
@@ -108,7 +109,6 @@
     <AndroidResource Include="Resources\values\strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="PlatformService\" />
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>

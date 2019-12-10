@@ -26,5 +26,11 @@ namespace Plugin.XF.Controls.Sample.Pages
         {
             DisplayAlert("Button 2 Clicked", "You clicked Action Button 2", "OK");
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            string randomMessage = $"{new Random().Next(0, 100)} : Non all capital letter button for Android";
+            Shared.Services.DialogService.ShowSnackbar(randomMessage, 3, Color.White, Color.Blue, 0.75f, "OK", Color.Yellow, null);
+        }
     }
 }

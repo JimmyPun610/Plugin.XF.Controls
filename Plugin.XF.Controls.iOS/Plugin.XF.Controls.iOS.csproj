@@ -37,7 +37,6 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="PlatformService\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
@@ -45,10 +44,12 @@
     <Compile Include="Effects\BorderlessEntryEffect.cs" />
     <Compile Include="Effects\EntryWithToolbarEffect.cs" />
     <Compile Include="Effects\NonAllCapButtonEffect.cs" />
+    <Compile Include="PlatformService\DialogService.cs" />
     <Compile Include="RendererInitializar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderer\EnhancedSearchBarRenderer.cs" />
     <Compile Include="Renderer\EnhancedWebViewRenderer.cs" />
+    <Compile Include="View\Snackbar.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms">
