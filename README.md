@@ -18,6 +18,33 @@ Please refer to Sample app for usage.
 ```
 1. Single / Multiple custom uibarbuttonitem in keyboard view
 ```
+```XAML
+      <Entry HorizontalTextAlignment="Start" Text="This is entry with multi action" BackgroundColor="Blue">
+                    <Entry.Effects>
+                        <effects:EntryWithToolbarEffect>
+                            <effects:EntryWithToolbarEffect.ActionButtons>
+                                <effects:ActionButton Parameter="Please bind to object" Title="Action 1" Clicked="ActionButton1_Clicked"                                                       BarButtonItemStyle="Plain" DismissKeyboard="False" FlexibleSpaceBehind="False"/>
+                                <effects:ActionButton Parameter="Please bind to object" Title="Action 2" Clicked="ActionButton2_Clicked"                                                       BarButtonItemStyle="Plain" DismissKeyboard="False" FlexibleSpaceBehind="True"/>
+                                <effects:ActionButton Title="Done" BarButtonItemStyle="Done" FlexibleSpaceBehind="False"/>
+                            </effects:EntryWithToolbarEffect.ActionButtons>
+                        </effects:EntryWithToolbarEffect>
+                    </Entry.Effects>
+                </Entry>
+```
+<table>
+  <tr>
+    <td> Single </td>
+    <td> Multiple </td>
+  </tr>
+  <tr>
+    <td> <img src="https://github.com/JimmyPun610/Plugin.XF.Controls/blob/master/Screenshots/IMG_9455.PNG?raw=true" height="400">
+    </td>
+    <td>
+      <img src="https://github.com/JimmyPun610/Plugin.XF.Controls/blob/master/Screenshots/IMG_9454.PNG?raw=true" height="400">
+    </td>
+  </tr>
+</table>
+
 #### Borderless Entry Effects
 #### Borderless Editor Effects
 #### AnnotatedEntry
@@ -27,7 +54,9 @@ Please refer to Sample app for usage.
 ```
 
 #### Snackbar
-
+```C#
+ Plugin.XF.Controls.Shared.Services.DialogService.ShowSnackbar(randomMessage, 3, Color.White, Color.Blue, 0.75f, "OK", Color.Yellow, null);
+```
 <table>
   <tr>
     <td> Android </td>
