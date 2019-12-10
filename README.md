@@ -27,7 +27,7 @@ Please refer to Sample app for usage.
 ```
 
 #### Snackbar
-```html
+
 <table>
   <tr>
     <td> Android </td>
@@ -41,4 +41,4 @@ Please refer to Sample app for usage.
     </td>
   </tr>
 </table>
-```
+
