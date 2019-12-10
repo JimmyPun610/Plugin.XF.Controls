@@ -9,6 +9,7 @@ Please refer to Sample app for usage.
 2. Android 9+
 
 ### Installation
+Install the package to Xamarin.Forms, Android and iOS project
 ```
 Install-Package Plugin.XF.Controls
 ```
