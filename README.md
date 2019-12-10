@@ -25,3 +25,20 @@ Please refer to Sample app for usage.
 1. Custom annotation on Entry
 2. Support Xamarin Form Material
 ```
+
+#### Snackbar
+```html
+<table>
+  <tr>
+    <td> Android </td>
+    <td> iOS </td>
+  </tr>
+  <tr>
+    <td> <img src="https://github.com/JimmyPun610/Plugin.XF.Controls/blob/master/Screenshots/Screenshot_20191210-114303.png?raw=true" height="400">
+    </td>
+    <td>
+      <img src="https://github.com/JimmyPun610/Plugin.XF.Controls/blob/master/Screenshots/IMG_9459.PNG?raw=true" height="400">
+    </td>
+  </tr>
+</table>
+```
