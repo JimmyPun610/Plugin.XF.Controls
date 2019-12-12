@@ -58,8 +58,9 @@ Install-Package Plugin.XF.Controls
 1. Custom annotation on Entry
 2. Support Xamarin Form Material
 ```
+To set in it runtime.
 ```C#
-AnnotatedEntry.SetAnnotation(isShow, text, textColor);
+AnnotatedEntry.SetAnnotation(bool isShow, string text, Color textColor);
 AnnotatedEntry.HideAnnotation()
 ```
 #### Snackbar
