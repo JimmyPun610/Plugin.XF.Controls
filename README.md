@@ -58,7 +58,10 @@ Install-Package Plugin.XF.Controls
 1. Custom annotation on Entry
 2. Support Xamarin Form Material
 ```
-
+```C#
+AnnotatedEntry.SetAnnotation(isShow, text, textColor);
+AnnotatedEntry.HideAnnotation()
+```
 #### Snackbar
 ```C#
  Plugin.XF.Controls.Shared.Services.DialogService.ShowSnackbar(randomMessage, 3, Color.White, Color.Blue, 0.75f, "OK", Color.Yellow, null);
