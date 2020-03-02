@@ -51,7 +51,7 @@ Install-Package Plugin.XF.Controls
   </tr>
 </table>
 
-#### [BorderlessEntryEffects](#Borderless Entry Effects)
+#### [BorderlessEntryEffects](#Borderless_Entry_Effects)
 #### [AnnotatedEntry](#AnnotatedEntry)
 ```
 1. Custom annotation on Entry
