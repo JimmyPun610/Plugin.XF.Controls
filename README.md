@@ -15,12 +15,12 @@ Install-Package Plugin.XF.Controls
 ```
 
 ### Controls
-#### [EnhancedWebView_](#EnhancedWebView)
+#### [EnhancedWebView](#EnhancedWebView)
 ```
 1. Custom Header Support
 2. Basic Authentication Support
 ```
-#### [EntrywithToolbarEffects](#Entry with Toolbar Effects (Only avaliable on iOS))
+#### [Entry with Toolbar Effects (Only avaliable on iOS)](#EntrywithToolbarEffects)
 ```
 1. Single / Multiple custom uibarbuttonitem in keyboard view
 ```
@@ -51,7 +51,7 @@ Install-Package Plugin.XF.Controls
   </tr>
 </table>
 
-#### [BorderlessEntryEffects](#Borderless_Entry_Effects)
+#### [Borderless Entry Effects](#BorderlessEntryEffects)
 #### [AnnotatedEntry](#AnnotatedEntry)
 ```
 1. Custom annotation on Entry
