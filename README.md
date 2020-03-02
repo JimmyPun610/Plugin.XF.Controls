@@ -15,7 +15,7 @@ Install-Package Plugin.XF.Controls
 ```
 
 ### Controls
-#### [EnhancedWebView](#EnhancedWebView)
+#### [EnhancedWebView_](#EnhancedWebView)
 ```
 1. Custom Header Support
 2. Basic Authentication Support
