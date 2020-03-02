@@ -3,7 +3,6 @@ Xamarin Forms Controls and Effects, WebView with Headres, Basic Authentication, 
 
 Please refer to Sample app for usage.
 
-
 ### Support Platform
 1. iOS 10+
 2. Android 9+
