@@ -15,12 +15,12 @@ Install-Package Plugin.XF.Controls
 ```
 
 ### Controls
-#### EnhancedWebView
+#### [EnhancedWebView]EnhancedWebView
 ```
 1. Custom Header Support
 2. Basic Authentication Support
 ```
-#### Entry with Toolbar Effects (Only avaliable on iOS)
+#### [Entry with Toolbar Effects]Entry with Toolbar Effects (Only avaliable on iOS)
 ```
 1. Single / Multiple custom uibarbuttonitem in keyboard view
 ```
@@ -51,9 +51,8 @@ Install-Package Plugin.XF.Controls
   </tr>
 </table>
 
-#### Borderless Entry Effects
-#### Borderless Editor Effects
-#### AnnotatedEntry
+#### [Borderless Entry Effects]Borderless Entry Effects
+#### [AnnotatedEntry]AnnotatedEntry
 ```
 1. Custom annotation on Entry
 2. Support Xamarin Form Material
@@ -63,7 +62,7 @@ To set in it runtime.
 AnnotatedEntry.SetAnnotation(bool isShow, string text, Color textColor);
 AnnotatedEntry.HideAnnotation()
 ```
-#### Snackbar
+#### [Snackbar]Snackbar
 ```C#
  Plugin.XF.Controls.Shared.Services.DialogService.ShowSnackbar(randomMessage, 3, Color.White, Color.Blue, 0.75f, "OK", Color.Yellow, null);
 ```
