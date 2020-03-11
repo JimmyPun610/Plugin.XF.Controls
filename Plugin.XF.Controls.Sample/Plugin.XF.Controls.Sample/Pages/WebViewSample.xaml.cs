@@ -24,7 +24,8 @@ namespace Plugin.XF.Controls.Sample.Pages
             EnhancedWeb.Username = "user";
             EnhancedWeb.Password = "password";
             UrlWebViewSource urlWebViewSource = new UrlWebViewSource();
-            urlWebViewSource.Url = "https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending";
+            //urlWebViewSource.Url = "https://www.whatismybrowser.com/detect/what-http-headers-is-my-browser-sending";
+            urlWebViewSource.Url = "https://player.vimeo.com/external/394146210.sd.mp4?s=dd728e24df1922ab367dbedf846825d19e691478&profile_id=165";
             EnhancedWeb.Source = urlWebViewSource;
         }
     }

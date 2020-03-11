@@ -14,9 +14,11 @@ namespace Plugin.XF.Controls.Droid
 {
     public class RendererInitializer
     {
-        public static void Init(Context context, Bundle bundle)
+        public static void Init(Context context, Bundle bundle, bool? enableFastRenderer)
         {
             Renderer.EnhancedWebViewRenderer.Init();
+            Renderer.ZoomImageRenderer.Init();
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init(enableFastRenderer);
         }
     }
 }

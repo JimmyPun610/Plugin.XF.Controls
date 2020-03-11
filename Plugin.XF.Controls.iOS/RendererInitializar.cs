@@ -12,6 +12,8 @@ namespace Plugin.XF.Controls.iOS
         public static void Init()
         {
             Renderer.EnhancedWebViewRenderer.Init();
+            Renderer.ZoomImageRenderer.Init();
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
         }
     }
 }

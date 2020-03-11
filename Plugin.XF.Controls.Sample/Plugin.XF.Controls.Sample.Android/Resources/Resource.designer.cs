@@ -2603,6 +2603,7 @@ namespace Plugin.XF.Controls.Sample.Droid
 			global::Plugin.XF.Controls.Droid.Resource.Styleable.View_paddingEnd = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.View_paddingEnd;
 			global::Plugin.XF.Controls.Droid.Resource.Styleable.View_paddingStart = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.View_paddingStart;
 			global::Plugin.XF.Controls.Droid.Resource.Styleable.View_theme = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.View_theme;
+			global::Plugin.XF.Controls.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::Plugin.XF.Controls.Sample.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::Plugin.XF.Controls.Sample.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::Plugin.XF.Controls.Sample.Droid.Resource.Attribute.coordinatorLayoutStyle;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::Plugin.XF.Controls.Sample.Droid.Resource.Attribute.font;
@@ -2668,19 +2669,19 @@ namespace Plugin.XF.Controls.Sample.Droid
 			global::Xamarin.Essentials.Resource.Drawable.notification_template_icon_low_bg = global::Plugin.XF.Controls.Sample.Droid.Resource.Drawable.notification_template_icon_low_bg;
 			global::Xamarin.Essentials.Resource.Drawable.notification_tile_bg = global::Plugin.XF.Controls.Sample.Droid.Resource.Drawable.notification_tile_bg;
 			global::Xamarin.Essentials.Resource.Drawable.notify_panel_notification_icon_bg = global::Plugin.XF.Controls.Sample.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Essentials.Resource.Id.actions = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.actions;
 			global::Xamarin.Essentials.Resource.Id.action_container = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.action_container;
 			global::Xamarin.Essentials.Resource.Id.action_divider = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.action_divider;
 			global::Xamarin.Essentials.Resource.Id.action_image = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.action_image;
 			global::Xamarin.Essentials.Resource.Id.action_text = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.action_text;
-			global::Xamarin.Essentials.Resource.Id.actions = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.actions;
 			global::Xamarin.Essentials.Resource.Id.all = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.all;
 			global::Xamarin.Essentials.Resource.Id.async = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.async;
 			global::Xamarin.Essentials.Resource.Id.blocking = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.blocking;
 			global::Xamarin.Essentials.Resource.Id.bottom = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.bottom;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_header_text = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.browser_actions_header_text;
+			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_items = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.browser_actions_menu_items;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_icon = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.browser_actions_menu_item_icon;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_item_text = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.browser_actions_menu_item_text;
-			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_items = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.browser_actions_menu_items;
 			global::Xamarin.Essentials.Resource.Id.browser_actions_menu_view = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.browser_actions_menu_view;
 			global::Xamarin.Essentials.Resource.Id.center = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.center;
 			global::Xamarin.Essentials.Resource.Id.center_horizontal = global::Plugin.XF.Controls.Sample.Droid.Resource.Id.center_horizontal;
@@ -2735,14 +2736,12 @@ namespace Plugin.XF.Controls.Sample.Droid
 			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionContainer = global::Plugin.XF.Controls.Sample.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
 			global::Xamarin.Essentials.Resource.Style.Widget_Compat_NotificationActionText = global::Plugin.XF.Controls.Sample.Droid.Resource.Style.Widget_Compat_NotificationActionText;
 			global::Xamarin.Essentials.Resource.Style.Widget_Support_CoordinatorLayout = global::Plugin.XF.Controls.Sample.Droid.Resource.Style.Widget_Support_CoordinatorLayout;
-			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::Plugin.XF.Controls.Sample.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.ColorStateListItem;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_alpha = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.ColorStateListItem_alpha;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_alpha = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
 			global::Xamarin.Essentials.Resource.Styleable.ColorStateListItem_android_color = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.ColorStateListItem_android_color;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.CoordinatorLayout;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_keylines = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.CoordinatorLayout_keylines;
-			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.CoordinatorLayout_Layout;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
@@ -2751,13 +2750,8 @@ namespace Plugin.XF.Controls.Sample.Droid
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
 			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Essentials.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamily = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamily;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderAuthority = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderCerts = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderPackage = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
-			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderQuery = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamilyFont;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_font = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamilyFont_android_font;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_android_fontStyle = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
@@ -2769,7 +2763,16 @@ namespace Plugin.XF.Controls.Sample.Droid
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontVariationSettings = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamilyFont_fontVariationSettings;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_fontWeight = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
 			global::Xamarin.Essentials.Resource.Styleable.FontFamilyFont_ttcIndex = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamilyFont_ttcIndex;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderAuthority = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderCerts = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderPackage = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Essentials.Resource.Styleable.FontFamily_fontProviderQuery = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.GradientColor;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.GradientColorItem;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_color = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.GradientColorItem_android_color;
+			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_offset = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.GradientColorItem_android_offset;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerColor = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.GradientColor_android_centerColor;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerX = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.GradientColor_android_centerX;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_centerY = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.GradientColor_android_centerY;
@@ -2782,9 +2785,7 @@ namespace Plugin.XF.Controls.Sample.Droid
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_startY = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.GradientColor_android_startY;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_tileMode = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.GradientColor_android_tileMode;
 			global::Xamarin.Essentials.Resource.Styleable.GradientColor_android_type = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.GradientColor_android_type;
-			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.GradientColorItem;
-			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_color = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.GradientColorItem_android_color;
-			global::Xamarin.Essentials.Resource.Styleable.GradientColorItem_android_offset = global::Plugin.XF.Controls.Sample.Droid.Resource.Styleable.GradientColorItem_android_offset;
+			global::Xamarin.Essentials.Resource.Xml.xamarin_essentials_fileprovider_file_paths = global::Plugin.XF.Controls.Sample.Droid.Resource.Xml.xamarin_essentials_fileprovider_file_paths;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_fade_in = global::Plugin.XF.Controls.Sample.Droid.Resource.Animation.abc_fade_in;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_fade_out = global::Plugin.XF.Controls.Sample.Droid.Resource.Animation.abc_fade_out;
 			global::Xamarin.Forms.Material.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::Plugin.XF.Controls.Sample.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
@@ -10971,10 +10972,13 @@ namespace Plugin.XF.Controls.Sample.Droid
 			public const int notify_panel_notification_icon_bg = 2131165301;
 			
 			// aapt resource value: 0x7F070076
-			public const int tooltip_frame_dark = 2131165302;
+			public const int sampleImage = 2131165302;
 			
 			// aapt resource value: 0x7F070077
-			public const int tooltip_frame_light = 2131165303;
+			public const int tooltip_frame_dark = 2131165303;
+			
+			// aapt resource value: 0x7F070078
+			public const int tooltip_frame_light = 2131165304;
 			
 			static Drawable()
 			{

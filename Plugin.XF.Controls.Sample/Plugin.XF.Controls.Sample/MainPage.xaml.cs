@@ -28,5 +28,11 @@ namespace Plugin.XF.Controls.Sample
             await Navigation.PushAsync(new Pages.ControlsSample());
 
         }
+
+        private async void OpenZoomImage_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new Pages.ZoomImageSamplePage()));
+
+        }
     }
 }

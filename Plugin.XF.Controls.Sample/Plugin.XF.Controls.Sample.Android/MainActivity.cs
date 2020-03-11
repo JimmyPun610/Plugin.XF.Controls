@@ -22,7 +22,7 @@ namespace Plugin.XF.Controls.Sample.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             global::Xamarin.Forms.FormsMaterial.Init(this, savedInstanceState);
-            Plugin.XF.Controls.Droid.RendererInitializer.Init(this, savedInstanceState);
+            Plugin.XF.Controls.Droid.RendererInitializer.Init(this, savedInstanceState, true);
 
             LoadApplication(new App());
         }

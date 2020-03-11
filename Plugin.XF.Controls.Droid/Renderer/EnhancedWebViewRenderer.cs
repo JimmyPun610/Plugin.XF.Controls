@@ -47,6 +47,7 @@ namespace Plugin.XF.Controls.Droid.Renderer
                 Dictionary<string, string> headers = Element.CustomHeaders;
                 webView.Settings.JavaScriptEnabled = true;
                 webView.Settings.BuiltInZoomControls = false;
+                //webView.Settings.MediaPlaybackRequiresUserGesture = false;
                 webView.Settings.SetSupportZoom(true);
                 EnhancedWebViewClient webViewClient = new EnhancedWebViewClient();
                 webViewClient.Username = Element.Username;
