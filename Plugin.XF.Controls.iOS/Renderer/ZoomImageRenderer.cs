@@ -337,8 +337,8 @@ namespace Plugin.XF.Controls.iOS.Renderer
 
             //zoomRect.X = (nfloat)(center.X - (zoomRect.Width * scale));
             //zoomRect.Y = (nfloat)(center.Y - (zoomRect.Height * scale));
-            zoomRect.X = (nfloat)(center.X * scale) - zoomRect.Width;
-            zoomRect.Y = (nfloat)(center.Y * scale) - zoomRect.Height;
+            zoomRect.X = (nfloat)(center.X * scale);
+            zoomRect.Y = (nfloat)(center.Y * scale);
 
             return zoomRect;
         }
