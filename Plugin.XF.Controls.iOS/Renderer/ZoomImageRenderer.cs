@@ -54,9 +54,11 @@ namespace Plugin.XF.Controls.iOS.Renderer
                             {
                                 var location = gest.LocationOfTouch(0, _scrollView);
                                 //_scrollView.ZoomToRect(GenerateZoomRect((float)_zoomImage.TapZoomScale, location), true);
-                                var zoomRect = ZoomRectForScale((float)_zoomImage.TapZoomScale, _scrollView, location);
-                                _scrollView.ZoomToRect(zoomRect, true);
-                                _scrollView.ContentSize = _imageView.Frame.Size;
+                                //var zoomRect = ZoomRectForScale((float)_zoomImage.TapZoomScale, _scrollView, location);
+                                //_scrollView.ZoomToRect(zoomRect, true);
+                                //_scrollView.ContentSize = _imageView.Frame.Size;
+
+                                ZoomAndMoveToPoint(location, _scrollView, _imageView, (nfloat)_zoomImage.TapZoomScale);
                             }
                             else
                             {
@@ -341,6 +343,28 @@ namespace Plugin.XF.Controls.iOS.Renderer
             zoomRect.Y = (nfloat)(center.Y * scale);
 
             return zoomRect;
+        }
+
+        public void ZoomAndMoveToPoint(CGPoint location, UIScrollView scrollView, UIImageView uIImageView, nfloat scale)
+        {
+            nfloat zoomScaleBefore = scrollView.ZoomScale;
+            if (location.X <= 0) location.X = 1;
+            if (location.Y <= 0) location.Y = 1;
+            if (location.X >= uIImageView.Bounds.Size.Width) location.X = uIImageView.Bounds.Size.Width - 1;
+            if (location.Y >= uIImageView.Bounds.Size.Height) location.Y = uIImageView.Bounds.Size.Height - 1;
+
+            //nfloat percentX = location.X / uIImageView.Bounds.Size.Width;
+            //nfloat percentY = location.Y / uIImageView.Bounds.Size.Height;
+
+            scrollView.SetZoomScale(scale, true);
+
+            nfloat posX = (nfloat)(location.X * scale);
+            nfloat posY = (nfloat)(location.Y * scale);
+            //nfloat posX = (percentX * scrollView.ContentSize.Width) - (scrollView.Frame.Size.Width / 2);
+            //nfloat posY = (percentY * scrollView.ContentSize.Height) - (scrollView.Frame.Size.Height / 2);
+            if (posX <= 0) posX = 1;
+            if (posY <= 0) posY = 1;
+            scrollView.ScrollRectToVisible(new CGRect(posX, posY, scrollView.Frame.Size.Width, scrollView.Frame.Size.Height), scale == zoomScaleBefore);
         }
     }
 }
