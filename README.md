@@ -3,6 +3,10 @@ Xamarin Forms Controls and Effects, WebView with Headres, Basic Authentication, 
 
 Please refer to Sample app for usage.
 
+### App Center Build ###
+##### Android [![Build status](https://build.appcenter.ms/v0.1/apps/fc7e05d4-0495-48fe-bec0-4bd6fd36701b/branches/master/badge)](https://appcenter.ms)
+##### iOS [![Build status](https://build.appcenter.ms/v0.1/apps/9e6e61c6-2577-41ca-888b-7223c31046f8/branches/master/badge)](https://appcenter.ms)
+
 ### Support Platform
 1. iOS 10+
 2. Android 9+
