@@ -61,7 +61,7 @@
       <Version>2.4.11.982</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>4.2.0.815419</Version>
+      <Version>4.5.0.617</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
