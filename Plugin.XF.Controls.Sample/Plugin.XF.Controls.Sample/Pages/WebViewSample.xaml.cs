@@ -28,5 +28,26 @@ namespace Plugin.XF.Controls.Sample.Pages
             //urlWebViewSource.Url = "https://player.vimeo.com/external/394146210.sd.mp4?s=dd728e24df1922ab367dbedf846825d19e691478&profile_id=165";
             EnhancedWeb.Source = urlWebViewSource;
         }
+
+        private void EnhancedWeb_EnhancedWebViewLoadCompleted(object sender, string e)
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                DisplayAlert("Hello", $"The url {e} is finished loading", "Confirm");
+            });
+        }
+
+        private void EnhancedWeb_EnhancedWebViewLoadError(object sender, string e)
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                DisplayAlert("Hello", $"Error occur {e}", "Confirm");
+            });
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            EnhancedWeb.RefreshPage();
+        }
     }
 }

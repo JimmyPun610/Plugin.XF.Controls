@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.XF.Controls.Sample.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.XF.Controls.Sample.iOS", "Plugin.XF.Controls.Sample\Plugin.XF.Controls.Sample.iOS\Plugin.XF.Controls.Sample.iOS.csproj", "{E566A303-9142-4CF0-96D0-66A022938C52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.XF.Controls.Sample", "Plugin.XF.Controls.Sample\Plugin.XF.Controls.Sample\Plugin.XF.Controls.Sample.csproj", "{716C39C2-B1C8-464F-A916-9604911A45D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Plugin.XF.Controls.Sample", "Plugin.XF.Controls.Sample\Plugin.XF.Controls.Sample\Plugin.XF.Controls.Sample.csproj", "{716C39C2-B1C8-464F-A916-9604911A45D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -82,6 +82,7 @@ Global
 		{E566A303-9142-4CF0-96D0-66A022938C52}.Debug|Any CPU.ActiveCfg = Debug|iPhone
 		{E566A303-9142-4CF0-96D0-66A022938C52}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{E566A303-9142-4CF0-96D0-66A022938C52}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E566A303-9142-4CF0-96D0-66A022938C52}.Debug|iPhone.Deploy.0 = Debug|iPhone
 		{E566A303-9142-4CF0-96D0-66A022938C52}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{E566A303-9142-4CF0-96D0-66A022938C52}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{E566A303-9142-4CF0-96D0-66A022938C52}.Release|Any CPU.ActiveCfg = Release|iPhone

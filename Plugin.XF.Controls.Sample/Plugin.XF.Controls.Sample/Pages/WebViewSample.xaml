@@ -9,8 +9,10 @@
              x:Class="Plugin.XF.Controls.Sample.Pages.WebViewSample">
     <ContentPage.Content>
         <StackLayout>
+            <Button Text="Reload" Clicked="Button_Clicked"></Button>
             <controls:EnhancedWebView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"
-                                      x:Name="EnhancedWeb"/>
+                                      x:Name="EnhancedWeb" EnhancedWebViewLoadCompleted="EnhancedWeb_EnhancedWebViewLoadCompleted" 
+                                      EnhancedWebViewLoadError="EnhancedWeb_EnhancedWebViewLoadError"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

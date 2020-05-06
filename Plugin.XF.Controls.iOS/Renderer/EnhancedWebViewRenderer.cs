@@ -17,11 +17,24 @@ namespace Plugin.XF.Controls.iOS.Renderer
     {
         public string Username { get; set; }
         public string Password { get; set; }
+        public event Action<string> LoadCompleted;
+        public event Action<string> LoadError;
+
         public override void DidReceiveAuthenticationChallenge(WKWebView webView, NSUrlAuthenticationChallenge challenge, Action<NSUrlSessionAuthChallengeDisposition, NSUrlCredential> completionHandler)
         {
             //base.DidReceiveAuthenticationChallenge(webView, challenge, completionHandler);
             completionHandler(NSUrlSessionAuthChallengeDisposition.UseCredential, new NSUrlCredential(Username, Password, NSUrlCredentialPersistence.ForSession));
             return;
+        }
+
+        public override void DidFinishNavigation(WKWebView webView, WKNavigation navigation)
+        {
+            LoadCompleted?.Invoke(webView.Url.ToString());
+        }
+
+        public override void DidFailNavigation(WKWebView webView, WKNavigation navigation, NSError error)
+        {
+            LoadError?.Invoke(error.DebugDescription);
         }
     }
     public class EnhancedWebViewRenderer : ViewRenderer<EnhancedWebView, WKWebView>
@@ -57,11 +70,25 @@ namespace Plugin.XF.Controls.iOS.Renderer
                     WebViewDelegate webViewDelegate = new WebViewDelegate();
                     webViewDelegate.Username = Element.Username;
                     webViewDelegate.Password = Element.Password;
+                    webViewDelegate.LoadCompleted += (url) =>
+                    {
+                        Element.TriggerEnhancedWebViewLoadCompleted(url);
+                    };
+                    webViewDelegate.LoadError += (errorMsg) =>
+                    {
+                        Element.TriggerEnhancedWebViewLoadError(errorMsg);
+                    };
                     webView.NavigationDelegate = webViewDelegate;
+                    Element.RefreshPageAction = new Action(() =>
+                    {
+                        webView.Reload();
+                    });
                 }
                 Control.LoadRequest(webRequest);
             }
 
         }
+
+       
     }
 }

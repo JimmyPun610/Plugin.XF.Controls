@@ -54,7 +54,16 @@ namespace Plugin.XF.Controls.Droid.Renderer
                 webViewClient.Username = Element.Username;
                 webViewClient.Password = Element.Password;
                 webViewClient.Headers = headers;
+                webViewClient.LoadCompleted += (url) =>
+                {
+                    Element.TriggerEnhancedWebViewLoadCompleted(url);
+                };
+                webViewClient.LoadError += (errorMsg) =>
+                {
+                    Element.TriggerEnhancedWebViewLoadError(errorMsg);
+                };
                 webView.SetWebViewClient(webViewClient);
+                
                 if(Element.Source != null)
                 {
                     if(Element.Source.GetType() == typeof(UrlWebViewSource))
@@ -63,7 +72,12 @@ namespace Plugin.XF.Controls.Droid.Renderer
                         webView.LoadUrl(source.Url, headers);
                     }
                 }
-                
+
+                Element.RefreshPageAction = new Action(() =>
+                {
+                    webView.Reload();
+                });
+
             }
         }
 

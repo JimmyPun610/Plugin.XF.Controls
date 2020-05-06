@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Text;
 using Xamarin.Forms;
 
@@ -10,6 +11,49 @@ namespace Plugin.XF.Controls.Shared.Controls
     /// </summary>
     public class EnhancedWebView : WebView
     {
+        /// <summary>
+        /// Fired when web view load completed
+        /// iOS : DidFinishNavigation
+        /// Android : OnPageFinished
+        /// Return source URL as action parameter
+        /// iOS : WKWebView Url
+        /// Android : Android.Webkit.WebView Url
+        /// </summary>
+        public event EventHandler<string> EnhancedWebViewLoadCompleted;
+        public void TriggerEnhancedWebViewLoadCompleted(string url)
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                EnhancedWebViewLoadCompleted?.Invoke(this, url);
+            });
+        }
+
+        /// <summary>
+        /// Fired when web view load error
+        /// iOS : DidFailNavigation
+        /// Android : OnReceivedError
+        /// Return error message as action parameter
+        /// iOS : NSError DebugDescription
+        /// Android : WebResourceError Description
+        /// </summary>
+        public event EventHandler<string> EnhancedWebViewLoadError;
+        public void TriggerEnhancedWebViewLoadError(string errorMsg)
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                EnhancedWebViewLoadError?.Invoke(this, errorMsg);
+            });
+        }
+
+        public Action RefreshPageAction;
+        /// <summary>
+        /// Reload page
+        /// </summary>
+        public virtual void RefreshPage()
+        {
+            RefreshPageAction?.Invoke();
+        }
+
         public static readonly BindableProperty CustomHeadersProperty = BindableProperty.Create(
              propertyName: nameof(CustomHeaders),
              returnType: typeof(Dictionary<string, string>),
@@ -47,6 +91,8 @@ namespace Plugin.XF.Controls.Shared.Controls
             get => (string)GetValue(PasswordProperty);
             set => SetValue(PasswordProperty, value);
         }
+
+        
 
     }
 }

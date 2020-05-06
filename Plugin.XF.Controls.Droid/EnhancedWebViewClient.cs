@@ -18,6 +18,10 @@ namespace Plugin.XF.Controls.Droid
         public Dictionary<string, string> Headers { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
+
+        public event Action<string> LoadCompleted;
+        public event Action<string> LoadError;
+
         public EnhancedWebViewClient()
         {
         }
@@ -37,18 +41,18 @@ namespace Plugin.XF.Controls.Droid
 
         public override void OnPageStarted(Android.Webkit.WebView view, string url, Android.Graphics.Bitmap favicon)
         {
-            base.OnPageStarted(view, url, favicon);
             System.Diagnostics.Debug.WriteLine("Loading website...");
         }
 
         public override void OnPageFinished(Android.Webkit.WebView view, string url)
         {
-            base.OnPageFinished(view, url);
+            LoadCompleted?.Invoke(view.Url);
             System.Diagnostics.Debug.WriteLine("Load finished.");
         }
 
         public override void OnReceivedError(Android.Webkit.WebView view, IWebResourceRequest request, WebResourceError error)
         {
+            LoadError?.Invoke(error.Description);
             base.OnReceivedError(view, request, error);
         }
     }
