@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Plugin.XF.Controls</id>
-    <version>1.1.0.1</version>
+    <version>1.1.1.0</version>
     <authors>Jimmy Pun</authors>
     <owners>Jimmy Pun</owners>
     <licenseUrl>https://github.com/JimmyPun610/Plugin.XF.Controls</licenseUrl>
@@ -10,27 +10,27 @@
     <iconUrl>https://banner2.kisspng.com/20180713/olo/kisspng-nuget-net-framework-package-manager-software-repo-nuget-5b487dc3ba81a7.452233091531477443764.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Xamarin Form helper for install application</description>
-    <releaseNotes>1.1.0.1 : Webview LoadError and LoadCompleted Event, Refresh method</releaseNotes>
+    <releaseNotes>1.1.1.0 : Support on Xamarin Form 4.6.0.772</releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>Xamarin Xamarin-Forms</tags>
 	<dependencies>
 		<group targetFramework="netstandard2.0">
 			<!--MonoAndroid dependencies go here-->
 			<dependency id="Xamarin.Essentials" version="1.5.0" />
-			<dependency id="Xamarin.Forms" version="4.5.0.617" />
+			<dependency id="Xamarin.Forms" version="4.6.0.772" />
 			<dependency id="Xamarin.FFImageLoading.Forms" version="2.4.11.982"/>
 		</group>
 		<group targetFramework="Xamarin.iOS10">
 			<!--MonoAndroid dependencies go here-->
 			<dependency id="Xamarin.Essentials" version="1.5.0" />
 			<dependency id="Xamarin.FFImageLoading.Forms" version="2.4.11.982"/>
-			<dependency id="Xamarin.Forms" version="4.5.0.617" />
+			<dependency id="Xamarin.Forms" version="4.6.0.772" />
 		</group>
 		<group targetFramework="MonoAndroid">
 			<!--MonoAndroid dependencies go here-->
 			<dependency id="Xamarin.FFImageLoading.Forms" version="2.4.11.982"/>
 			<dependency id="Xamarin.Essentials" version="1.5.0" />
-			<dependency id="Xamarin.Forms" version="4.5.0.617" />
+			<dependency id="Xamarin.Forms" version="4.6.0.772" />
 			<dependency id="Xamarin.Android.Support.v7.MediaRouter" version="28.0.0.3" />
 			<dependency id="Xamarin.Android.Support.v7.AppCompat" version="28.0.0.3" />
 			<dependency id="Xamarin.Android.Support.v4" version="28.0.0.3" />	
