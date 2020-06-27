@@ -12,6 +12,7 @@
         <Button x:Name="OpenWeb" Clicked="OpenWeb_Clicked" Text="Open Web"/>
         <Button x:Name="OpenControlsSample" Clicked="OpenSample_Clicked" Text="Controls Sample"/>
         <Button x:Name="OpenZoomImage" Clicked="OpenZoomImage_Clicked" Text="Zoom Image Sample (Required network)"/>
+        <Button x:Name="ShowSnackbar" Clicked="ShowSnackbar_Clicked" Text="Sample Snackbar"/>
     </StackLayout>
 
 </ContentPage>

@@ -34,5 +34,10 @@ namespace Plugin.XF.Controls.Sample
             await Navigation.PushModalAsync(new NavigationPage(new Pages.ZoomImageSamplePage()));
 
         }
+
+        void ShowSnackbar_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Plugin.XF.Controls.Shared.Services.DialogService.ShowSnackbar("Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg Testing msg ", 3, Color.White, Color.Red, 0.8f, "Hide", Color.Yellow, null);
+        }
     }
 }
