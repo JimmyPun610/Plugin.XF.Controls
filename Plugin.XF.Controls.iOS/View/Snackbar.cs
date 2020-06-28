@@ -94,16 +94,29 @@ namespace Plugin.XF.Controls.iOS.View
                     }
 
 
-                    CGSize maxSize = new CGSize(txt.Frame.Width, float.MaxValue);
-                    NSString t = (NSString)text;
-                    var textHeight = t.GetBoundingRect(maxSize, NSStringDrawingOptions.UsesLineFragmentOrigin, new UIStringAttributes
+                    CGSize txtMaxSize = new CGSize(txt.Frame.Width, float.MaxValue);
+                    NSString txtLabelText = (NSString)text;
+                    var textHeight = txtLabelText.GetBoundingRect(txtMaxSize, NSStringDrawingOptions.UsesLineFragmentOrigin, new UIStringAttributes
                     {
                         Font = txt.Font
                     }, null).Height;
                     SnackbarHeight = (float)textHeight;
 
                     txt.Frame = new CGRect(txt.Frame.X, txt.Frame.Y, txt.Frame.Width, textHeight);
-                    btn.Frame = new CGRect(btn.Frame.X, btn.Frame.Y, btn.Frame.Width, textHeight);
+                    if (!string.IsNullOrWhiteSpace(actionTitle))
+                    {
+                        CGSize btnMaxSize = new CGSize(btn.Frame.Width, float.MaxValue);
+                        NSString btnLabelText = (NSString)actionTitle;
+                        var btnHeight = btnLabelText.GetBoundingRect(txtMaxSize, NSStringDrawingOptions.UsesLineFragmentOrigin, new UIStringAttributes
+                        {
+                            Font = btn.Font
+                        }, null).Height;
+                        btn.Frame = new CGRect(btn.Frame.X, (textHeight - btnHeight) / 2, btn.Frame.Width, btnHeight);
+                    }
+
+
+
+
                     float y = (float)window.Bounds.Size.Height - SnackbarHeight - (float)window.SafeAreaInsets.Bottom;
                     snackbarView.Frame = new CGRect(0, y, window.Frame.Width, SnackbarHeight + (float)window.SafeAreaInsets.Bottom);
                     snackbarView.BackgroundColor = this.BackgroundColor;
