@@ -12,7 +12,7 @@ namespace Plugin.XF.Controls.Services
 #if __ANDROID__
             Droid.PlatformService.DialogService.ShowSnackbar(text, duration, textColor, backgroundColor, backgroundAlpha, actionText, actionTextColor, action);
 #endif
-#if __iOS__
+#if __IOS__
             iOS.PlatformService.DialogService.ShowSnackbar(text, duration, textColor, backgroundColor, backgroundAlpha, actionText, actionTextColor, action);
 #endif
         }

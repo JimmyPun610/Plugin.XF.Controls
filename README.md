@@ -9,8 +9,8 @@ Please refer to Sample app for usage.
 ##### 1.0.0.11 : For Xamarin Form 4.2 - 4.4
 ##### 1.1.0.1 : For Xamarin Form 4.5.0.617+
 ##### 1.1.1.0: For Xamarin Forms 4.6.0.772
-##### 1.1.3.0: For Xamarin Forms 4.6.0.967
-##### Latest version : 1.1.2.0
+##### 1.1.3.1: For Xamarin Forms 4.6.0.967
+##### Latest version : 1.1.3.1
 
 ### App Center Build ###
 ##### Android [![Build status](https://build.appcenter.ms/v0.1/apps/fc7e05d4-0495-48fe-bec0-4bd6fd36701b/branches/master/badge)](https://appcenter.ms)
@@ -76,7 +76,7 @@ AnnotatedEntry.HideAnnotation()
 ```
 #### [Snackbar](#Snackbar)
 ```C#
- Plugin.XF.Controls.Shared.Services.DialogService.ShowSnackbar(randomMessage, 3, Color.White, Color.Blue, 0.75f, "OK", Color.Yellow, null);
+ Plugin.XF.Controls.Services.DialogService.ShowSnackbar(randomMessage, 3, Color.White, Color.Blue, 0.75f, "OK", Color.Yellow, null);
 ```
 <table>
   <tr>
