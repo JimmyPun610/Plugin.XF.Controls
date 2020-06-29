@@ -125,6 +125,9 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Plugin.XF.Controls">
+      <Version>1.1.3</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.FFImageLoading.Forms">
       <Version>2.4.11.982</Version>
     </PackageReference>
@@ -136,10 +139,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\Plugin.XF.Controls\Plugin.XF.Controls.csproj">
-      <Project>{89550015-d500-4a89-b205-dec4c1ebaf67}</Project>
-      <Name>Plugin.XF.Controls</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Plugin.XF.Controls.Sample\Plugin.XF.Controls.Sample.csproj">
       <Project>{716C39C2-B1C8-464F-A916-9604911A45D3}</Project>
       <Name>Plugin.XF.Controls.Sample</Name>
