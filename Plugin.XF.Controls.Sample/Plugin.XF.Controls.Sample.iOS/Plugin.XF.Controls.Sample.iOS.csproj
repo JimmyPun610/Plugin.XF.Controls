@@ -128,23 +128,17 @@
     <PackageReference Include="Xamarin.FFImageLoading.Forms">
       <Version>2.4.11.982</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="4.7.0.968" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.967" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
     <PackageReference Include="Xamarin.Forms.Visual.Material">
-      <Version>4.7.0.968</Version>
+      <Version>4.6.0.967</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\Plugin.XF.Controls.iOS\Plugin.XF.Controls.iOS.csproj">
-      <Project>{edbebf93-25c5-4d29-b9c3-249ac53dbfe1}</Project>
-      <Name>Plugin.XF.Controls.iOS</Name>
-      <IsAppExtension>false</IsAppExtension>
-      <IsWatchApp>false</IsWatchApp>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Plugin.XF.Controls.Shared\Plugin.XF.Controls.Shared.csproj">
-      <Project>{376afaf5-3e5a-4e7f-acf8-3e9f0fb46a06}</Project>
-      <Name>Plugin.XF.Controls.Shared</Name>
+    <ProjectReference Include="..\..\Plugin.XF.Controls\Plugin.XF.Controls.csproj">
+      <Project>{89550015-d500-4a89-b205-dec4c1ebaf67}</Project>
+      <Name>Plugin.XF.Controls</Name>
     </ProjectReference>
     <ProjectReference Include="..\Plugin.XF.Controls.Sample\Plugin.XF.Controls.Sample.csproj">
       <Project>{716C39C2-B1C8-464F-A916-9604911A45D3}</Project>

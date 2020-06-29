@@ -4,8 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             xmlns:controls="clr-namespace:Plugin.XF.Controls.Shared.Controls;assembly=Plugin.XF.Controls.Shared"
-             xmlns:effects="clr-namespace:Plugin.XF.Controls.Shared.Effects;assembly=Plugin.XF.Controls.Shared"
+             xmlns:controls="clr-namespace:Plugin.XF.Controls.Controls;assembly=Plugin.XF.Controls"
+             xmlns:effects="clr-namespace:Plugin.XF.Controls.Effects;assembly=Plugin.XF.Controls"
              x:Class="Plugin.XF.Controls.Sample.Pages.ControlsSample">
     <ContentPage.Content>
         <ScrollView>

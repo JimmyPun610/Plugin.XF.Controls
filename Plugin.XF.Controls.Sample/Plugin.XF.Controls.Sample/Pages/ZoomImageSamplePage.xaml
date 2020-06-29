@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              Title="Sample ZoomImage"
-             xmlns:controls="clr-namespace:Plugin.XF.Controls.Shared.Controls;assembly=Plugin.XF.Controls.Shared"
+             xmlns:controls="clr-namespace:Plugin.XF.Controls.Controls;assembly=Plugin.XF.Controls"
              x:Class="Plugin.XF.Controls.Sample.Pages.ZoomImageSamplePage">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Close" Clicked="ToolbarItem_Clicked"/>

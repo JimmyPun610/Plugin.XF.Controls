@@ -31,7 +31,7 @@ namespace Plugin.XF.Controls.Sample.Pages
         {
             string randomMessage = $"{new Random().Next(0, 100)} : Non all capital letter button for Android";
             //Keep action = null if you just want to dismiss the snackbar
-            Shared.Services.DialogService.ShowSnackbar(randomMessage, 3, Color.White, Color.Blue, 0.75f, "OK", Color.Yellow, ()=>
+            Services.DialogService.ShowSnackbar(randomMessage, 3, Color.White, Color.Blue, 0.75f, "OK", Color.Yellow, ()=>
             {
                 DisplayAlert("Action Button Clicked", "You clicked action button", "OK");
 

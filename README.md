@@ -9,7 +9,7 @@ Please refer to Sample app for usage.
 ##### 1.0.0.11 : For Xamarin Form 4.2 - 4.4
 ##### 1.1.0.1 : For Xamarin Form 4.5.0.617+
 ##### 1.1.1.0: For Xamarin Forms 4.6.0.772
-##### 1.1.2.0: Form Xamarin Forms 4.7.0.968
+##### 1.1.3.0: For Xamarin Forms 4.6.0.967
 ##### Latest version : 1.1.2.0
 
 ### App Center Build ###

@@ -1,0 +1,154 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
+
+	<PropertyGroup>
+
+		<!--Update with your target such as: Xamarin.iOS10 or MonoAndroid80 or Xamarin.Mac20-->
+		<TargetFrameworks>Xamarin.iOS10;MonoAndroid10.0;MonoAndroid90;netstandard2.0</TargetFrameworks>
+
+		<!--Assembly and Namespace info -->
+		<id>Plugin.XF.Controls</id>
+		<AssemblyName>Plugin.XF.Controls</AssemblyName>
+		<RootNamespace>Plugin.XF.Controls</RootNamespace>
+
+		<Product></Product>
+		<AssemblyVersion>1.1.3.0</AssemblyVersion>
+		<AssemblyFileVersion>1.1.3.0</AssemblyFileVersion>
+		<Version>1.1.3.0</Version>
+		<NeutralLanguage>en</NeutralLanguage>
+
+
+		<!--Don't auto add files for me, I will tell you -->
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+
+		<!-- Helper to add defines-->
+		<DefineConstants>$(DefineConstants);</DefineConstants>
+
+		<!--Assembly and Namespace info -->
+
+		<!--Version of C# to use -->
+		<LangVersion>default</LangVersion>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Authors>Jimmy Pun</Authors>
+		<Description>Xamarin Form helper for install application</Description>
+		<PackageIconUrl>https://banner2.kisspng.com/20180713/olo/kisspng-nuget-net-framework-package-manager-software-repo-nuget-5b487dc3ba81a7.452233091531477443764.jpg</PackageIconUrl>
+		<RepositoryUrl>https://github.com/JimmyPun610/Plugin.XF.Controls</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/JimmyPun610/Plugin.XF.Controls</PackageProjectUrl>
+		<PackageLicenseUrl>https://github.com/JimmyPun610/Plugin.XF.Controls</PackageLicenseUrl>
+		<RepositoryType></RepositoryType>
+		<PackageTags>Xamarin.Forms Snackbar Controls Effects</PackageTags>
+		<PackageReleaseNotes>1. Restructure library
+      2. Fix iOS snackbar position bug
+		</PackageReleaseNotes>
+		<Copyright>Copyright 2020</Copyright>
+
+	</PropertyGroup>
+
+	<!-- Define what happens on build and release -->
+	<PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
+		<DebugType>full</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)'=='Release' ">
+		<DebugType>pdbonly</DebugType>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+		 <!--If we want a nuget package add this-->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+     
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- This None is here so the conditionally included files show up in the Solution Explorer -->
+		<None Include="**\*.cs;**\*.xml;**\*.axml;**\*.png" Exclude="obj\**\*.*;bin\**\*.*;bin;obj" />
+
+		<!-- We will compile anything ending in .shared.cs  You can change this -->
+		<Compile Include="Shared\*.cs" />
+    <Compile Include="Shared\**\*.cs" />
+
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.967" />
+	</ItemGroup>
+	<ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) ">
+		<Compile Include="NetStandard\*.cs" />
+		<PackageReference Include="NETStandard.Library" Version="2.0.3" />
+
+	</ItemGroup>
+
+	<ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
+		<Compile Include="Android\*.cs" />
+		<Compile Include="Android\**\*.cs" />
+    <PackageReference Include="Xamarin.Android.Support.Media.Compat">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v4">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.VersionedParcelable">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Interpolator">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Fragment">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Core.UI">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Core.Utils">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Annotations">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.CursorAdapter">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Collections">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Compat">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Design">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+		<PackageReference Include="Xamarin.Android.Support.Design">
+			<Version>28.0.0.3</Version>
+		</PackageReference>
+		<PackageReference Include="Xamarin.AndroidX.MediaRouter">
+			<Version>1.1.0.1</Version>
+		</PackageReference>
+		<PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData">
+			<Version>2.2.0.1</Version>
+		</PackageReference>
+		<PackageReference Include="Xamarin.AndroidX.Browser">
+			<Version>1.2.0.1</Version>
+		</PackageReference>
+		<PackageReference Include="Xamarin.Google.Android.Material">
+			<Version>1.0.0.1</Version>
+		</PackageReference>
+		<PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4">
+			<Version>1.0.0.1</Version>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
+		<Compile Include="iOS\*.cs" />
+		<Compile Include="iOS\**\*.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="NetStandard\" />
+	</ItemGroup>
+
+
+	
+
+</Project>
