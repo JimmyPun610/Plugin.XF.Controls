@@ -74,7 +74,7 @@ namespace Plugin.XF.Controls.iOS.View
                     if (action == null)
                         action = () => hide();
                     float margin = 16;
-
+                    
                     if (!string.IsNullOrEmpty(actionTitle))
                     {
                         this.action = action;
@@ -102,7 +102,7 @@ namespace Plugin.XF.Controls.iOS.View
                     }, null).Height;
                     SnackbarHeight = (float)textHeight;
 
-                    txt.Frame = new CGRect(txt.Frame.X, txt.Frame.Y, txt.Frame.Width, textHeight);
+                    txt.Frame = new CGRect(txt.Frame.X, txt.Frame.Y + margin / 2, txt.Frame.Width, textHeight + margin);
                     if (!string.IsNullOrWhiteSpace(actionTitle))
                     {
                         CGSize btnMaxSize = new CGSize(btn.Frame.Width, float.MaxValue);
@@ -111,14 +111,14 @@ namespace Plugin.XF.Controls.iOS.View
                         {
                             Font = btn.Font
                         }, null).Height;
-                        btn.Frame = new CGRect(btn.Frame.X, (textHeight - btnHeight) / 2, btn.Frame.Width, btnHeight);
+                        btn.Frame = new CGRect(btn.Frame.X, (textHeight - btnHeight) / 2 + margin / 2, btn.Frame.Width, btnHeight + margin);
                     }
 
 
 
 
-                    float y = (float)window.Bounds.Size.Height - SnackbarHeight - (float)window.SafeAreaInsets.Bottom;
-                    snackbarView.Frame = new CGRect(0, y, window.Frame.Width, SnackbarHeight + (float)window.SafeAreaInsets.Bottom);
+                    float y = (float)window.Bounds.Size.Height - SnackbarHeight - (float)window.SafeAreaInsets.Bottom - margin * 2;
+                    snackbarView.Frame = new CGRect(0, y, window.Frame.Width, SnackbarHeight + (float)window.SafeAreaInsets.Bottom + margin * 2);
                     snackbarView.BackgroundColor = this.BackgroundColor;
                     snackbarView.Alpha = Alpha;
                     snackbarView.AddSubview(txt);
