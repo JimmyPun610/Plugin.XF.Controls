@@ -60,10 +60,12 @@ namespace Plugin.XF.Controls.iOS.Renderer
 
                 UrlWebViewSource source = (Xamarin.Forms.UrlWebViewSource)Element.Source;
                 var webRequest = new NSMutableUrlRequest(new NSUrl(source.Url));
-                if (Element.CustomHeaders.Count > 0)
-                {
-                    foreach (string key in Element.CustomHeaders.Keys)
-                        webRequest[key] = Element.CustomHeaders[key];
+                if (Element.CustomHeaders != null) {
+                    if (Element.CustomHeaders.Count > 0)
+                    {
+                        foreach (string key in Element.CustomHeaders.Keys)
+                            webRequest[key] = Element.CustomHeaders[key];
+                    }
                 }
                 if (!string.IsNullOrEmpty(Element.Username) && !string.IsNullOrEmpty(Element.Password))
                 {
